@@ -29,7 +29,7 @@ function run() {
 
 function desired() {
   for file in $(ls test/*); do
-    run "-f" $file || exit 1
+    run "-r" $file || exit 1
   done
   return 0
 }
